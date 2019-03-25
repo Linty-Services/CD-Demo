@@ -1,8 +1,8 @@
 steps:
   - name: "gcr.io/cloud-builders/go"
-    args: ["install", "github.com/MichaelKst/gcp-cd-codelab"]
-    env: ["PROJECT_ROOT=github.com/MichaelKst/gcp-cd-codelab"]
+    args: ["install", "github.com/Linty-Services/CD-Demo"]
+    env: ["PROJECT_ROOT=github.com/Linty-Services/CD-Demo"]
   - name: "gcr.io/cloud-builders/docker"
-    args: ["build", "-t", "gcr.io/ageless-aquifer-234408/gcp-cd-codelab:$REVISION_ID", "-f", "Dockerfile", "."]
+    args: ["build", "-t", "gcr.io/refined-gravity-235213/gcp-cd-demo:$REVISION_ID", "-f", "Dockerfile", "."]
 images:
-  - "gcr.io/ageless-aquifer-234408/gcp-cd-codelab:$REVISION_ID"
+  - "gcr.io/refined-gravity-235213/gcp-cd-demo:$REVISION_ID"
