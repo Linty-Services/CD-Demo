@@ -1,5 +1,5 @@
 FROM alpine
 
-COPY gopath/bin/gcp-cd-codelab /go/bin/gcp-cd-codelab
+COPY gopath/bin/CD-Demo /go/bin/CD-Demo
 
-ENTRYPOINT /go/bin/gcp-cd-codelab
+ENTRYPOINT /go/bin/CD-Demo
